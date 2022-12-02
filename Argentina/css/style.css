@@ -1,3 +1,104 @@
 header {
-  background: url("src/bg/argentina-bg.png") no-repeat;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  left: calc(50% - 506.5px - 0.5px);
+  top: calc(50% - 75px - 15.5px);
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 128px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+
+#logo-header {
+  width: 69px;
+  height: 69px;
+  padding: 10px;
+}
+
+#header__color {
+  background: rgba(205, 214, 219, 0.5);
+}
+
+.container-fluid {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 10vw;
+}
+.container-fluid a {
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #1E1E1E;
+  font-size: 24px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand-text {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 40vw;
+}
+
+.bg--header {
+  height: 100%;
+  width: 100vw;
+  margin-top: -17vh;
+  z-index: -1;
+}
+
+.maps__block {
+  background-image: url("../assets/bg/maps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.maps__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.maps__block h3 {
+  text-align: center;
+  font-family: "Quattrocento Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.text1 {
+  z-index: 1;
+}
+
+.bg--maps {
+  height: 100%;
+  width: 100vw;
+  margin-top: -5%;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
