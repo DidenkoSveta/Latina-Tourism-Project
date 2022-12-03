@@ -71,34 +71,81 @@ h1 {
 }
 
 .maps__block {
-  background-image: url("../assets/bg/maps.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  padding-top: 66px;
 }
 .maps__block-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 91px 150px 150px 150px;
 }
-.maps__block h3 {
+.maps__block-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -10%;
+}
+.maps__block-btn {
+  position: absolute;
+  left: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 260px;
+  height: 60px;
+  border: 3px solid #1E1E1E;
+  -webkit-filter: drop-shadow(2px 4px 6px #1E1E1E);
+          filter: drop-shadow(2px 4px 6px #1E1E1E);
+  border-radius: 30px;
+  background: rgba(205, 214, 219, 0);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+h3 {
   text-align: center;
-  font-family: "Quattrocento Sans";
+  font-family: "Quattrocento Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
+  margin-top: 1%;
 }
 
-.text1 {
-  z-index: 1;
-}
-
-.bg--maps {
-  height: 100%;
+.maps--bg {
+  position: absolute;
+  background-image: url("../assets/bg/maps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   width: 100vw;
-  margin-top: -5%;
   z-index: -1;
+  margin-top: -10vh;
+}
+
+#container__maps {
+  margin-top: 90px;
+}
+
+.maps__col {
+  text-align: left;
+}
+
+#maps__col-1 {
+  margin-top: -10px;
 }/*# sourceMappingURL=style.css.map */
