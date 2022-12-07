@@ -9,6 +9,9 @@ header
 	max-width: 100%
 	// padding: 0 10vw
 	margin: 0 auto
+a
+	text-decoration: none
+	color: $color-black
 
 h1
 	left: calc(50% - 1013px/2 - 0.5px)
@@ -58,6 +61,7 @@ h1
 
 .maps__block
 	padding-top: 66px
+	margin-bottom: 100px
 
 	&-text
 		display: flex
@@ -67,23 +71,23 @@ h1
 		display: flex
 		justify-content: center
 		margin-top: -10%
-	&-btn
-		position: absolute
-		left: 70%
-		display: flex
-		justify-content: space-evenly
-		align-items: center
-		box-sizing: border-box
-		width: 260px
-		height: 60px
-		border: 3px solid #1E1E1E
-		filter: drop-shadow(2px 4px 6px #1E1E1E)
-		border-radius: 30px
-		background: rgba(205, 214, 219, 0)
-		font-family: 'Roboto', sans-serif
-		font-weight: 500
-		font-size: 20px
-		line-height: 22px
+#button
+	position: absolute
+	left: 70%
+	display: flex
+	justify-content: space-evenly
+	align-items: center
+	box-sizing: border-box
+	width: 260px
+	height: 60px
+	border: 3px solid #1E1E1E
+	filter: drop-shadow(2px 4px 6px #1E1E1E)
+	border-radius: 30px
+	background: rgba(205, 214, 219, 0)
+	font-family: 'Roboto', sans-serif
+	font-weight: 500
+	font-size: 20px
+	line-height: 22px
 h3
 	text-align: center
 	font-family: 'Quattrocento Sans', sans-serif
@@ -95,10 +99,8 @@ h3
 	margin-top: 1%
 .maps--bg
 	position: absolute
-	background-image: url("../assets/bg/maps.png")
 	background-repeat: no-repeat
 	background-size: cover
-	height: 100vh
 	width: 100vw
 	z-index: -1
 	margin-top: -10vh
@@ -108,3 +110,164 @@ h3
 	text-align: left
 #maps__col-1
 	margin-top: -10px
+.guides__section
+	margin: 0 20vw
+	padding-top: 200px
+.guides__cards
+	display: flex
+	flex-wrap: wrap
+.guide__card
+	margin-right: 10px
+	position: relative
+	display: flex
+	&-texts
+		font-size: 22px
+		position: absolute
+		padding-left: 120px
+	&-comment
+		font-size: 22px
+		max-width: 235px
+.guides__block-moves
+	position: relative
+	display: flex
+	flex-direction: row-reverse
+.guides__block-btn
+	position: absolute
+	margin-left: -120%
+	// left: -50%
+	top: 82%
+.guides__block-video
+	position: relative
+	display: flex
+	flex-direction: column-reverse
+	.video-text
+		font-family: 'Quattrocento Sans'
+		display: flex
+		align-items: baseline
+		position: absolute
+		font-size: 24px
+		line-height: 27px
+		font-weight: 400
+		color: $color-white
+.shedule__block
+	margin: 10vh 30vw
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	h2
+		font-family: 'Roboto'
+		font-style: normal
+		font-weight: 900
+		font-size: 64px
+		line-height: 75px
+		letter-spacing: 0.2em
+		text-transform: uppercase
+	&-text
+		padding-top: 3vh
+		display: flex
+		flex-direction: column
+		align-items: center
+	&-title
+		font-style: normal
+		font-weight: 400
+		font-size: 24px
+		line-height: 27px
+		text-transform: uppercase
+		margin-bottom: 22px
+	&-cities
+		max-width: 925px
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		line-height: 18px
+		text-align: center
+	&-trips
+		font-weight: 700
+		font-size: 32px
+		line-height: 35px
+		text-align: left
+		white-space: nowrap
+		margin-bottom: 50px
+	&-card
+		display: flex
+		color: $color-white
+#shedule__block-button
+	margin-top: 22px
+	display: flex
+	color: #ffffff
+	width: 238px
+	height: 60px
+	background: #BF000E
+	border-radius: 30px
+	border-color: #BF000E
+	filter: drop-shadow(2px 4px 6px #1E1E1E)
+	font-family: 'Roboto'
+	font-weight: 300
+	font-size: 20px
+	line-height: 22px
+	align-items: center
+	justify-content: center
+	align-content: center
+	img
+		margin: 10px
+.shedule
+	margin: 20vh 70vw
+.shedule__date
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 500
+	font-size: 100px
+	line-height: 105px
+	text-align: left
+	padding-right: 18px
+	color: #D6D7D9
+.shedule__month
+	font-family: 'Quattrocento Sans'
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 22px
+	text-align: left
+	color: #D6D7D9
+.shedule__trip
+	font-weight: 700
+	font-size: 24px
+	line-height: 27px
+	text-align: left
+	white-space: nowrap
+	color: #D6D7D9
+#shedule__trips-button
+	width: 330px
+	height: 43px
+	left: calc(50% - 330px/2)
+	top: calc(50% - 43px/2)
+	background: rgba(192, 0, 5, 0.8)
+	box-shadow: 2px 4px 6px #1E1E1E
+	border-radius: 10px
+	font-weight: 700
+	font-size: 22px
+	line-height: 24px
+	text-align: center
+	white-space: nowrap
+	color: #1E1E1E
+	margin-top: 50px
+.shedule__text-about
+	padding-top: 10px
+
+.footer--bg
+	height: 100%
+	width: 100vw
+	margin-bottom: -11vh
+	z-index: -1
+// 	position: absolute
+// 	background-repeat: no-repeat
+// 	background-size: cover
+// 	width: 100vw
+// 	z-index: -1
+// 	margin-bottom: 0
+// 	bottom: 20
+// 	// margin-top: 11vh
+// // .footer__block
+// // 	position: relative
+// // 	top: 20vh

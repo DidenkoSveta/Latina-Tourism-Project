@@ -4,6 +4,11 @@ header {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+
 h1 {
   left: calc(50% - 506.5px - 0.5px);
   top: calc(50% - 75px - 15.5px);
@@ -72,6 +77,7 @@ h1 {
 
 .maps__block {
   padding-top: 66px;
+  margin-bottom: 100px;
 }
 .maps__block-text {
   display: -webkit-box;
@@ -89,7 +95,8 @@ h1 {
           justify-content: center;
   margin-top: -10%;
 }
-.maps__block-btn {
+
+#button {
   position: absolute;
   left: 70%;
   display: -webkit-box;
@@ -129,10 +136,8 @@ h3 {
 
 .maps--bg {
   position: absolute;
-  background-image: url("../assets/bg/maps.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   width: 100vw;
   z-index: -1;
   margin-top: -10vh;
@@ -148,4 +153,236 @@ h3 {
 
 #maps__col-1 {
   margin-top: -10px;
+}
+
+.guides__section {
+  margin: 0 20vw;
+  padding-top: 200px;
+}
+
+.guides__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.guide__card {
+  margin-right: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.guide__card-texts {
+  font-size: 22px;
+  position: absolute;
+  padding-left: 120px;
+}
+.guide__card-comment {
+  font-size: 22px;
+  max-width: 235px;
+}
+
+.guides__block-moves {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.guides__block-btn {
+  position: absolute;
+  margin-left: -120%;
+  top: 82%;
+}
+
+.guides__block-video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.guides__block-video .video-text {
+  font-family: "Quattrocento Sans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: absolute;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.shedule__block {
+  margin: 10vh 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shedule__block h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.shedule__block-text {
+  padding-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shedule__block-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.shedule__block-cities {
+  max-width: 925px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+.shedule__block-trips {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+.shedule__block-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+}
+
+#shedule__block-button {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  width: 238px;
+  height: 60px;
+  background: #BF000E;
+  border-radius: 30px;
+  border-color: #BF000E;
+  -webkit-filter: drop-shadow(2px 4px 6px #1E1E1E);
+          filter: drop-shadow(2px 4px 6px #1E1E1E);
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+#shedule__block-button img {
+  margin: 10px;
+}
+
+.shedule {
+  margin: 20vh 70vw;
+}
+
+.shedule__date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 105px;
+  text-align: left;
+  padding-right: 18px;
+  color: #D6D7D9;
+}
+
+.shedule__month {
+  font-family: "Quattrocento Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: left;
+  color: #D6D7D9;
+}
+
+.shedule__trip {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  color: #D6D7D9;
+}
+
+#shedule__trips-button {
+  width: 330px;
+  height: 43px;
+  left: calc(50% - 165px);
+  top: calc(50% - 21.5px);
+  background: rgba(192, 0, 5, 0.8);
+  -webkit-box-shadow: 2px 4px 6px #1E1E1E;
+          box-shadow: 2px 4px 6px #1E1E1E;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  color: #1E1E1E;
+  margin-top: 50px;
+}
+
+.shedule__text-about {
+  padding-top: 10px;
+}
+
+.footer--bg {
+  height: 100%;
+  width: 100vw;
+  margin-bottom: -11vh;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
