@@ -9,6 +9,13 @@ a {
   color: #1E1E1E;
 }
 
+a:hover {
+  color: #BF000E;
+  cursor: pointer;
+  -webkit-transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+}
+
 h1 {
   left: calc(50% - 506.5px - 0.5px);
   top: calc(50% - 75px - 15.5px);
@@ -17,6 +24,7 @@ h1 {
   font-size: 128px;
   font-weight: 500;
   letter-spacing: 0.3em;
+  color: #1E1E1E;
 }
 
 #logo-header {
@@ -25,13 +33,30 @@ h1 {
   padding: 10px;
 }
 
+#logo-header:hover {
+  -webkit-transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+}
+
+#logo-footer {
+  width: 114px;
+}
+
+#logo-footer:hover {
+  -webkit-transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+}
+
 #header__color {
   background: rgba(205, 214, 219, 0.5);
 }
 
+#nav-padding {
+  padding: 0;
+}
+
 .container-fluid {
   width: 100vw;
-  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +64,8 @@ h1 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 0 10vw;
+  font-style: normal;
+  font-weight: 700;
 }
 .container-fluid a {
   font-family: "Quattrocento Sans", sans-serif;
@@ -52,12 +79,6 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.navbar-brand-text {
-  font-style: normal;
-  font-weight: 700;
-}
-
 .menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,13 +87,6 @@ h1 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 40vw;
-}
-
-.bg--header {
-  height: 100%;
-  width: 100vw;
-  margin-top: -17vh;
-  z-index: -1;
 }
 
 .maps__block {
@@ -96,7 +110,7 @@ h1 {
   margin-top: -10%;
 }
 
-#button {
+#guides__button, #maps__button {
   position: absolute;
   left: 70%;
   display: -webkit-box;
@@ -123,6 +137,26 @@ h1 {
   line-height: 22px;
 }
 
+#maps__button:hover {
+  -webkit-transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+  background: #fff;
+}
+
+#maps__button:active {
+  background: rgb(145, 207, 240);
+}
+
+#guides__button:hover {
+  -webkit-transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+  background: #fff;
+}
+
+#guides__button:active {
+  background: rgb(145, 207, 240);
+}
+
 h3 {
   text-align: center;
   font-family: "Quattrocento Sans", sans-serif;
@@ -131,7 +165,8 @@ h3 {
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
-  margin-top: 1%;
+  margin-top: 56px;
+  padding-bottom: 100px;
 }
 
 .maps--bg {
@@ -151,13 +186,23 @@ h3 {
   text-align: left;
 }
 
-#maps__col-1 {
+.maps__col-1 {
   margin-top: -10px;
+}
+
+.img__maps-cart {
+  position: relative;
+  top: -20px;
 }
 
 .guides__section {
   margin: 0 20vw;
   padding-top: 200px;
+}
+
+.guide__block {
+  position: relative;
+  top: 150px;
 }
 
 .guides__cards {
@@ -183,6 +228,10 @@ h3 {
 .guide__card-comment {
   font-size: 22px;
   max-width: 235px;
+}
+
+#guides__title {
+  text-align: left;
 }
 
 .guides__block-moves {
@@ -213,7 +262,6 @@ h3 {
           flex-direction: column-reverse;
 }
 .guides__block-video .video-text {
-  font-family: "Quattrocento Sans";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,10 +269,44 @@ h3 {
       -ms-flex-align: baseline;
           align-items: baseline;
   position: absolute;
+  left: 15px;
   font-size: 24px;
   line-height: 27px;
-  font-weight: 400;
   color: #FFFFFF;
+}
+.guides__block-video .video-text-rows {
+  position: relative;
+  top: -15px;
+  left: 10px;
+}
+.guides__block-video .video-text-watch {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0.07em;
+}
+.guides__block-video .video-text-look {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.video-play:hover {
+  -webkit-transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+  cursor: pointer;
+}
+
+.guide__video-line {
+  position: absolute;
+  width: 495px;
+  height: 326px;
+  background: rgba(7, 7, 7, 0.3);
+  border-radius: 20px;
 }
 
 .shedule__block {
@@ -278,6 +360,7 @@ h3 {
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+  white-space: nowrap;
 }
 .shedule__block-trips {
   font-weight: 700;
@@ -304,7 +387,7 @@ h3 {
   height: 60px;
   background: #BF000E;
   border-radius: 30px;
-  border-color: #BF000E;
+  border: none;
   -webkit-filter: drop-shadow(2px 4px 6px #1E1E1E);
           filter: drop-shadow(2px 4px 6px #1E1E1E);
   font-family: "Roboto";
@@ -324,8 +407,18 @@ h3 {
   margin: 10px;
 }
 
+#shedule__block-button:hover {
+  -webkit-transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.5) translateZ(30px);
+  border: #ffffff solid 3px;
+}
+
+#shedule__block-button:active {
+  background: #1E1E1E;
+}
+
 .shedule {
-  margin: 20vh 70vw;
+  margin: 15vh 60vw;
 }
 
 .shedule__date {
@@ -340,7 +433,7 @@ h3 {
 }
 
 .shedule__month {
-  font-family: "Quattrocento Sans";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -376,13 +469,48 @@ h3 {
   margin-top: 50px;
 }
 
+#shedule__trips-button:hover {
+  -webkit-transform: perspective(400px) scaleZ(1.2) translateZ(30px);
+          transform: perspective(400px) scaleZ(1.2) translateZ(30px);
+}
+
 .shedule__text-about {
   padding-top: 10px;
 }
 
-.footer--bg {
-  height: 100%;
-  width: 100vw;
-  margin-bottom: -11vh;
-  z-index: -1;
+#card__block-footer, #card__block-shedule, #card__block-maps, #card__block-header {
+  margin-bottom: 0rem !important;
+}
+
+.footer__line {
+  width: 50vw;
+  margin: 1vh 19vw 5vh 27vw;
+  opacity: 0.7;
+}
+
+.footer__col {
+  font-size: 20px;
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #1E1E1E;
+}
+.footer__col-contacts {
+  max-width: 170px;
+}
+
+.footer__block-col {
+  font-weight: 700;
+  margin-bottom: 40px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer__block-row {
+  margin-bottom: 40px;
+}
+
+.footer__block-row:hover {
+  -webkit-transform: perspective(800px) scaleZ(1.3) translateZ(20px);
+          transform: perspective(800px) scaleZ(1.3) translateZ(20px);
 }/*# sourceMappingURL=style.css.map */
