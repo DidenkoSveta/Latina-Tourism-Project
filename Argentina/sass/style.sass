@@ -50,7 +50,7 @@ a:hover
 #header__block-menu
 	position: relative
 	display: flex
-	justify-content: space-around 
+	justify-content: space-around
 	left: -10vw
 	@media (max-width:$breakpoint_md)
 		width: 100vw
@@ -106,6 +106,64 @@ a:hover
 		background-image: url("../assets/svg/burger-black.svg")
 #btn-close-burger
 	height: 30px
-	width: 30px	
+	width: 30px
 	background-size: cover
 	margin: 20px
+.guide__block
+	background-image: url("../assets/bg/maps-bg.png")
+	&-img
+		position: relative
+		background-image: url("../assets/bg/location.png")
+		background-repeat: no-repeat
+		width: 400px
+		height: 500px
+		top: -25px
+	&-text
+		font-family: 'Roboto'
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		line-height: 18px
+		color: #1E1E1E
+		max-width: 350px
+		text-align: left
+		margin-left: 3vw
+	&-btn
+		position: relative
+		margin-top: 80px
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 290px
+		height: 60px
+		border: 3px solid #1E1E1E
+		filter: drop-shadow(2px 4px 6px #1E1E1E)
+		border-radius: 30px
+		font-family: 'Roboto'
+		font-style: normal
+		font-weight: 700
+		font-size: 20px
+		line-height: 22px
+		color: #1E1E1E
+		white-space: nowrap
+		text-decoration: none
+	&-arrow
+		max-width: 60px
+		margin-left: 20px
+#guide__block-content
+	width: 80vw
+	margin-top: 100px
+	margin-left: -5vw
+#guide__block-text2
+	max-width: 350px
+	@media (max-width:$breakpoint_lg)
+		width: 50vw
+#guide__block-maps
+	h3
+		padding-top: 60px
+		text-align: center
+		font-weight: 700
+		font-size: 36px
+		line-height: 40px
+		text-transform: uppercase
+		color: #1E1E1E
