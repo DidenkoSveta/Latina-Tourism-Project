@@ -21,7 +21,7 @@
    <header>
       <div class="header__block">
          <div class="container-fluid" id="header__block-menu">
-            <nav role="navigation" class="navbar" id="navigation__menu">
+            <nav class="navbar" id="navigation__menu">
                <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                      <img src="assets/svg/logo.svg" alt="Logo" class="d-inline-block align-text-top"
@@ -40,8 +40,7 @@
                   data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                   <span class="navbar-toggler-icon"></span>
                </button>
-               <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
-                  aria-labelledby="navbarOffcanvasLgLabel">
+               <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg">
                   <button type="button" class="btn-close" id="btn-close-burger" data-bs-dismiss="offcanvas"
                      aria-label="Close"></button>
                   <div class="menu__nav" id="header__block-nav">
@@ -55,43 +54,104 @@
          <h1>ARGENTINA</h1>
       </div>
    </header>
-   <section class="guide"></section>
-   <div class="guide__block">
-      <div class="container-fluid" id="guide__block-wrapper">
-         <div class="container-fluid" id="guide__block-maps">
-            <h3>Выберите свое незабываемое путешествие</h3>
-            <div class="container text-center">
-               <div class="row justify-content-md-center" id="guide__block-content">
-                  <div class="col col-lg-2 guide__block-img">
-                  </div>
-                  <div class="col-md-auto guide__block-text">
-                     Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей
-                     активности способствует повышению качества укрепления моральных ценностей. В своём стремлении
-                     повысить качество жизни, они забывают, что граница обучения кадров, а также свежий взгляд на
-                     привычные вещи — безусловно открывает новые горизонты для существующих финансовых и
-                     административных условий! Приятно, граждане, наблюдать, как базовые сценарии поведения
-                     пользователей освещают чрезвычайно интересные особенности картины в целом, однако конкретные
-                     выводы, разумеется, заблокированы в рамках своих собственных рациональных ограничений. Мы вынуждены
-                     отталкиваться от того, что высокое качество позиционных исследований способствует повышению
-                     качества как самодостаточных, так и внешне зависимых концептуальных решений.
-                  </div>
-                  <div class="col-md-auto guide__block-text" id="guide__block-text2">
-                     Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей
-                     активности способствует повышению качества укрепления моральных ценностей. В своём стремлении
-                     повысить качество жизни, они забывают, что граница обучения кадров, а также свежий взгляд на
-                     привычные вещи — безусловно открывает новые горизонты для существующих финансовых и
-                     административных условий! Приятно, граждане, наблюдать, как базовые сценарии поведения
-                     пользователей освещают чрезвычайно интересные особенности картины.
-                     <a class="guide__block-btn" href="#" role="button">Узнать больше <img class="guide__block-arrow"
-                           src="assets/svg/arrow.svg" alt="arrow"></a>
+   <section class="guide">
+      <div class="guide__block">
+         <div class="container-fluid" id="guide__block-wrapper">
+            <div class="container-fluid" id="guide__block-maps">
+               <h3>Выберите свое незабываемое путешествие</h3>
+               <div class="container text-center">
+                  <div class="row justify-content-md-center" id="guide__block-content">
+                     <div class="col col-lg-2 guide__block-img">
+                     </div>
+                     <div class="col-md-auto guide__block-text" id="guide-text1">
+                        Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей
+                        активности способствует повышению качества укрепления моральных ценностей. В своём стремлении
+                        повысить качество жизни, они забывают, что граница обучения кадров, а также свежий взгляд на
+                        привычные вещи — безусловно открывает новые горизонты для существующих финансовых и
+                        административных условий! Приятно, граждане, наблюдать, как базовые сценарии поведения
+                        пользователей освещают чрезвычайно интересные особенности картины в целом, однако конкретные
+                        выводы, разумеется, заблокированы в рамках своих собственных рациональных ограничений. Мы
+                        вынуждены
+                        отталкиваться от того, что высокое качество позиционных исследований способствует повышению
+                        качества как самодостаточных, так и внешне зависимых концептуальных решений.
+                     </div>
+                     <div class="col-md guide__block-text" id="guide-text2">
+                        Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей
+                        активности способствует повышению качества укрепления моральных ценностей. В своём стремлении
+                        повысить качество жизни, они забывают, что граница обучения кадров, а также свежий взгляд на
+                        привычные вещи — безусловно открывает новые горизонты для существующих финансовых и
+                        административных условий! Приятно, граждане, наблюдать, как базовые сценарии поведения
+                        пользователей освещают чрезвычайно интересные особенности картины.
+                        <a class="guide__block-btn" id="guide__block-button" href="#" role="button">Узнать больше <img
+                              class="guide__block-arrow" src="assets/svg/arrow.svg" alt="arrow"></a>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
-         <div class="container-fluid" id="guide__block-guide">
+            <div class="container-fluid" id="guides__block-guide">
+               <h3>Проводники</h3>
+               <div class="container text-center">
+                  <div class="row">
+                     <div class="col">
+                        <div class="card guides__block-card mb-3" style="max-width: 540px;">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="assets/icons/gid-1.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Кирилл Гвоздь</h5>
+                                    <p class="card-text">Гид</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <p class="guide__card-text card-text">Лучший маршрут для путешествий
+                              зимой</p>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="card guides__block-card mb-3" style="max-width: 540px;">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="assets/icons/gid-2.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Светлана Лима</h5>
+                                    <p class="card-text">Фотограф</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <p class="guide__card-text card-text">Мое самое любимое место для фотографий</p>
+                        </div>
+                     </div>
+                     <div class="col-5 guides__block-img">
+                     </div>
+                  </div>
+                  <a class="guides__block-btn" id="guides__block-button" href="#" role="button">Забронировать <img
+                        class="guide__block-arrow" src="assets/svg/arrow.svg" alt="arrow"></a>
+               </div>
+            </div>
+            <div class="empty__container"></div>
          </div>
       </div>
-   </div>
+   </section>
+   <section class="shedule">
+      <div class="shedule__block">
+         <div class="shedule__block-container">
+            <h3 class="shedile__block-text">Неповторимая</h3>
+            <h2 class="shedule__block-title">Аргентина</h2>
+            <p class="shedule__block-lists">Буэнос-Айрес/Игуасу/Мендоса/Успажата/Парк Аконкагуа/Калафате/Перито
+               Моренс/Чальтен/гора Фиц-Рой/долина Кальчакиес/Качи/Де-Лас-Кончас/Сан-Антонио/Пурмамарка/Ущелье
+               Умаука/Сан-Хуан/Валле-Фертиль/Семицветная гора/Лос Кардонес/Жужуй/Сальта</p>
+               <a class="guide__block-btn" id="shedule__block-button" href="#" role="button">Записаться <img
+                  class="guide__block-arrow" src="assets/svg/arrow-white.svg" alt="arrow"></a>
+         </div>
+         <div class="shedule__block-calendar">
+
+         </div>
+      </div>
+   </section>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"></script>

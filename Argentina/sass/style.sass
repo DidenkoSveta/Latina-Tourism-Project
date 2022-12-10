@@ -1,8 +1,9 @@
+$breakpoint_xl: 1440px
 $breakpoint_lg: 1200px
 $breakpoint_md: 900px
 $breakpoint_sm: 700px
 $breakpoint_xs: 500px
-$breakpoint_xxs: 400px
+$breakpoint_xxs: 320px
 $btn-close-width: 5rem
 h1
 	text-align: center
@@ -29,6 +30,12 @@ h1
 		letter-spacing: 0.2em
 	@media (max-width:$breakpoint_xxs)
 		font-size: 38px
+h3
+	font-weight: 700
+	font-size: 36px
+	line-height: 40px
+	text-transform: uppercase
+	color: #1E1E1E
 a
 	font-family: 'Roboto'
 	font-style: normal
@@ -38,8 +45,12 @@ a
 	color: #1E1E1E
 	padding: 0 2vw
 a:hover
+	color: #1E1E1E
 	cursor: pointer
 	transform: perspective(400px) scaleZ(1.5) translateZ(30px)
+body
+	max-width: 1440px
+	margin: 0 auto
 .header__block
 	background-image: url("../assets/bg/argentina-bg.png")
 	background-repeat: no-repeat
@@ -125,7 +136,6 @@ a:hover
 		font-size: 16px
 		line-height: 18px
 		color: #1E1E1E
-		max-width: 350px
 		text-align: left
 		margin-left: 3vw
 	&-btn
@@ -147,23 +157,141 @@ a:hover
 		color: #1E1E1E
 		white-space: nowrap
 		text-decoration: none
+		@media (min-width:$breakpoint_xxs) and (max-width:$breakpoint_lg)
+			position: relative
+			margin-top: 20px
 	&-arrow
 		max-width: 60px
 		margin-left: 20px
+#guide__block-wrapper
+	max-width: 1440px
+	margin: 0 auto
 #guide__block-content
 	width: 80vw
 	margin-top: 100px
 	margin-left: -5vw
-#guide__block-text2
-	max-width: 350px
-	@media (max-width:$breakpoint_lg)
-		width: 50vw
 #guide__block-maps
 	h3
 		padding-top: 60px
 		text-align: center
-		font-weight: 700
-		font-size: 36px
-		line-height: 40px
+#guide-text1
+	max-width: 350px
+#guide-text2
+	max-width: 350px
+	@media (max-width:$breakpoint_lg)
+		max-width: 550px
+		width: 50vw
+#guides__block-guide
+	h3
+		margin-top: 120px
+		position: relative
+		margin-bottom: 35px
+.guides__block-img
+	position: relative
+	background-image: url("../assets/icons/guide-video.png")
+	background-repeat: no-repeat
+	background-size: contain
+	height: 332px
+	width: 500px
+	@media (max-width:$breakpoint_lg)
+		width: 320px
+		background-size: contain
+	@media (max-width:1023px)
+		display: none
+.guides__block-btn
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: -65px
+	margin-left: 450px
+	width: 290px
+	height: 60px
+	border: 3px solid #1E1E1E
+	filter: drop-shadow(2px 4px 6px #1E1E1E)
+	border-radius: 30px
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 700
+	font-size: 20px
+	line-height: 22px
+	color: #1E1E1E
+	white-space: nowrap
+	text-decoration: none
+	@media (max-width: 1400px)
+		margin-left: 280px
+	@media (max-width: 1200px)
+		position: relative
+		margin-bottom: 10vh
+.guides__block-card
+	border-color: rgba(30, 30, 30, 0)
+	background: rgba(30, 30, 30, 0)
+	display: flex
+	align-items: flex-start
+.card-body
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	align-items: flex-start
+.guide__card-text
+	font-family: 'Roboto'
+	font-style: normal
+	display: inline-block
+	max-width: 280px
+	font-weight: 400!important
+	font-size: 22px
+	line-height: 24px
+	color: #1E1E1E
+	text-align: left
+.card-title
+	font-weight: 700
+	font-size: 22px
+	line-height: 24px
+	color: #1E1E1E
+.card-text
+	font-weight: 300
+	font-size: 22px
+	line-height: 26px
+	color: #1E1E1E
+.empty__container
+	height: 100px
+.shedule
+.shedule__block
+	background-image: url("../assets/bg/shedule-bg.png")
+	height: 1303px
+	background-repeat: no-repeat
+	background-size: cover
+	&-container
+		position: relative
+		max-width: 820px
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin: 0 auto
+		padding-top: 42px
+	&-text 
+		font-weight: 400
+		font-size: 24px
+		line-height: 27px
 		text-transform: uppercase
 		color: #1E1E1E
+	&-title 
+		font-weight: 900
+		font-size: 64px
+		line-height: 75px
+		letter-spacing: 0.2em
+		text-transform: uppercase
+		color: #1E1E1E
+	&-lists 
+		font-weight: 400
+		font-size: 16px
+		line-height: 18px
+		text-align: center
+		color: #1E1E1E
+#shedule__block-button
+	background: #BF000E
+	width: 238px
+	height: 60px
+	border: none
+	color: #D6D7D9
+	margin-top: 20px
