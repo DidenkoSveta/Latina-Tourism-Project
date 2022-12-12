@@ -39,11 +39,8 @@ h3
 a
 	font-family: 'Roboto'
 	font-style: normal
-	font-weight: 700
-	font-size: 30px
-	line-height: 27px
 	color: #1E1E1E
-	padding: 0 2vw
+	text-decoration: none
 a:hover
 	color: #1E1E1E
 	cursor: pointer
@@ -51,6 +48,8 @@ a:hover
 body
 	max-width: 1440px
 	margin: 0 auto
+	background-color: #EAE6E2
+	overflow-x: hidden
 .header__block
 	background-image: url("../assets/bg/argentina-bg.png")
 	background-repeat: no-repeat
@@ -431,4 +430,68 @@ body
 	background-image: url("../assets/bg/footer-bg.png")
 	background-repeat: no-repeat
 	background-size: cover
-	height: 380px
+	&-container
+		margin: 0 auto
+	&-column
+		max-width: 170px
+		text-align: left
+		color: #1E1E1E
+		padding-bottom: 88px
+		@media (max-width: 1000px)
+			padding-bottom: 45px
+		@media (max-width: 600px)
+			padding-bottom: 40px
+		a
+			display: block
+			@media (max-width: 1000px)
+				font-size: 16px
+			@media (max-width: 600px)
+				font-size: 12px
+		h5
+			font-size: 22px
+			@media (max-width: 1000px)
+				font-size: 16px
+			@media (max-width: 600px)
+				font-size: 12px
+	&-row
+		display: flex
+		justify-content: center
+		justify-content: space-between
+		@media (max-width: 600px)
+			flex-wrap: wrap
+			flex-direction: row
+			align-items: flex-start
+	&-text
+		display: block
+		font-weight: 400
+		font-size: 20px
+		line-height: 22px
+		padding-top: 32px
+		@media (max-width: 600px)
+			padding-top: 10px
+	&-booking
+		@media (max-width: 600px)
+			padding-left: 40px
+#logo-footer
+	display: block
+	max-width: 120px
+	@media (max-width: 1000px)
+		max-width: 110px
+	@media (max-width: 600px)
+		max-width: 74px
+
+#line-footer
+	display: block!important
+	position: relative
+	padding-top: 20px
+	padding-bottom: 50px
+	opacity: 0.6
+	width: 100%
+	@media (max-width: 1000px)
+		display: none
+	@media (max-width: 600px)
+		padding-bottom: 10px
+#footer__block-coll
+	@media (max-width: 1000px)
+		display: none
+	@media (max-width: 600px)
