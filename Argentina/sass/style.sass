@@ -69,6 +69,9 @@ body
 	margin-left: 9vw
 #logo-header
 	width: 202px
+	margin-left: 100px
+	@media (max-width: 1200px)
+		margin-left: 10vw
 #logo-burger
 	width: 100px
 #navigation__menu
@@ -82,14 +85,21 @@ body
 		width: 90vw
 		margin: 0 5vw
 #header__block-list
+	margin-left: 100px
+	@media (max-width:1000px)
+		margin-left: 80px
 	a
 		font-size: 30px
+		padding-left: 100px
 	@media (max-width:$breakpoint_md)
 		a
 			display: block
-	@media (max-width:$breakpoint_lg)
+	@media (max-width:1230px)
 		a
 			font-size: 25px
+			padding-left: 40px
+			@media (max-width:1000px)
+				padding-left: 20px
 #header__block-nav
 	position: relative
 	display: flex
@@ -125,9 +135,21 @@ body
 		position: relative
 		background-image: url("../assets/bg/location.png")
 		background-repeat: no-repeat
+		background-size: cover
 		width: 400px
 		height: 500px
 		top: -25px
+		@media (max-width: 1200px)
+			background-image: url("../assets/bg/location-tb.png")
+			background-size: contain
+			top: 5px
+			width: 40vw
+			height: 60vh
+		@media (max-width: 600px)
+			background-image: url("../assets/bg/location-md.png")
+			height: 250px
+			top: -10px
+			background-size: cover
 	&-text
 		font-family: 'Roboto'
 		font-style: normal
@@ -137,6 +159,10 @@ body
 		color: #1E1E1E
 		text-align: left
 		margin-left: 3vw
+		@media (max-width: 1000px)
+			font-size: 14px
+		@media (max-width: 600px)
+			font-size: 12px
 	&-btn
 		position: relative
 		margin-top: 80px
@@ -166,20 +192,38 @@ body
 	max-width: 1440px
 	margin: 0 auto
 #guide__block-content
-	// width: 80vw
 	margin-top: 100px
-	// margin-left: -5vw
+	@media (max-width:1000px)
+		margin-top: 50px
+		align-content: normal
+	@media (max-width:600px)
+		margin-top: 30px
+		align-items: flex-end
 #guide__block-maps
 	h3
 		padding-top: 60px
 		text-align: center
+		@media (max-width:1000px)
+			font-weight: 700
+			font-size: 28px
+			line-height: 31px
+		@media (max-width:600px)
+			font-weight: 700
+			font-size: 16px
+			line-height: 18px
+		
 #guide-text1
 	max-width: 350px
+	@media (max-width: 600px)
+		max-width: 50vw
 #guide-text2
 	max-width: 350px
-	@media (max-width:$breakpoint_lg)
+	@media (max-width: 1200px)
 		max-width: 550px
-		width: 50vw
+		padding-top: 30px
+	@media (max-width: 600px)
+		width: 90vw
+		padding-top: 30px
 #guides__block-guide
 	h3
 		margin-top: 120px
